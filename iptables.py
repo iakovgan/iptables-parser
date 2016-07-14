@@ -16,10 +16,11 @@ def parse(output):
      { 
         "INPUT": {
           "policy": "DROP",
-          "rules": [list of rules]
+          "rules": {dict of rules}
         },
         ...
      }
+    # FIXME: should rules be rather a list for preserve the order?
     '''
     chains = Dict()
     current_chain = None
